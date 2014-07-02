@@ -4,10 +4,10 @@ var _ = require("underscore");
 
 replaceUmlauts = function(s) {
     var tr = {"ä":"ae", "ü":"ue", "ö":"oe", "ß":"ss" }
-    for(var letter in tr){
+    /*for(var letter in tr){
         s = s.replace(letter, tr[letter]);
-    }
-    return  s //s.replace(/[äöüß]/g, function($0) { return tr[$0] })
+    }*/
+    return s.replace(/[äöüß]/g, function($0) { return tr[$0] })
 }
 
 
@@ -47,5 +47,4 @@ var xkcdPW = function(){
     })
 }
 
-
-_(1000).times(function(){xkcdPW()})
+_(1).times(function(){xkcdPW()})

@@ -1,0 +1,9 @@
+{
+    "name": "xkcd-password-generator",
+    "version": "0.1.0",
+    "description": "generate passwords",
+    "main": "app.js",
+    "dependencies": {
+        "underscore-plus": "1.5.0"
+    }
+}
